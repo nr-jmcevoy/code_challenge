@@ -11,13 +11,13 @@ This project was built to target Java 11.
 
 This project uses [Gradle](https://gradle.org/) to build and package the project. Please ensure Gradle is installed on your machine.
 
-To run this project as a container please ensure that (docker)[https://www.docker.com/get-started] is installed on your machine.
+To run this project as a container please ensure that [Docker](https://www.docker.com/get-started) is installed on your machine.
 
 ## Build
 
 To build the project `cd` into the root directory and run `./gradlew build`.
 
-This should run all tests and build the project. This will also generate an executable `jar` file called `code_challenge.jar` located in `./app/build/libs`.
+This should run all tests and build the project. This will also generate an executable `.jar` file called `code_challenge.jar` located in `./app/build/libs`.
 
 ## Running with Gradle
 
@@ -107,7 +107,7 @@ I would refactor to allow a user specified number of results to print rather tha
 
 I would have written more test cases for non English Unicode characters, although depending on how granular this could end up becoming quite cumbersome/time consuming depending on languages/number of characters tested.
 
-I didn't get around to the AWS task due to time constraints. I would probably have packaged/deployed as a Lambda service and refactor the code to possibly download files from S3 for example and then read them based on strings sent to the Lambda service via HTTP.
+I didn't get around to the AWS task due to time constraints. I would probably have packaged/deployed as a Lambda service and refactor the code to possibly download files from S3 for example and then read them based on file path strings sent to the Lambda service via HTTP.
 
 This could be done with something like Terraform or AWS CloudFormation.
 
